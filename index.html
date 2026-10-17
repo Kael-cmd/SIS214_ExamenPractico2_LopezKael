@@ -1,0 +1,766 @@
+<!-- Kael Lopez Castillo Examen Parcial 2 TECWEB 1 -->
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional y CV de Kael Alessandro López Castillo - Estudiante de Ingeniería de Sistemas en la Universidad Católica Boliviana San Pablo (La Paz, Bolivia). Especializado en Backend, Ingeniería de Datos, Cloud AWS, Redes e IoT.">
+  <meta name="author" content="Kael Alessandro López Castillo">
+  <meta name="keywords" content="Kael López, Kael Alessandro López Castillo, Ingeniería de Sistemas, UCB La Paz, Portafolio, TensorFlow, ESP32, AWS, Docker, Python, Node.js, SIS-214">
+  <title>Kael Alessandro López Castillo | Portafolio Profesional &amp; CV - Ingeniería de Sistemas UCB</title>
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230056b3'/><text x='50' y='65' font-family='sans-serif' font-size='42' font-weight='bold' fill='white' text-anchor='middle'>KL</text></svg>">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Etiquetado semantico estructural y atributos WAI-ARIA -->
+  <header class="site-header" role="banner">
+    <nav class="nav-container" role="navigation" aria-label="Navegación principal">
+      <a href="#hero" class="brand-link" aria-label="Kael Alessandro López Castillo - Inicio">
+        <span class="brand-badge" aria-hidden="true">&lt;KL /&gt;</span>
+        <span class="brand-text">Kael López</span>
+      </a>
+
+      <section class="nav-actions">
+        <ul id="primary-menu" class="nav-menu" role="menubar">
+          <li role="none"><a href="#about" class="nav-link" role="menuitem">Sobre Mí</a></li>
+          <li role="none"><a href="#projects" class="nav-link" role="menuitem">Proyectos</a></li>
+          <li role="none"><a href="#skills" class="nav-link" role="menuitem">Habilidades</a></li>
+          <li role="none"><a href="#github" class="nav-link" role="menuitem">GitHub en Vivo</a></li>
+          <li role="none"><a href="#profile-aside" class="nav-link" role="menuitem">Perfil &amp; CV</a></li>
+          <li role="none"><a href="#contact" class="nav-link nav-link--cta" role="menuitem">Contacto</a></li>
+        </ul>
+
+        <button 
+          id="theme-toggle-btn" 
+          class="theme-toggle-btn" 
+          type="button" 
+          aria-label="Cambiar a modo oscuro" 
+          aria-pressed="false"
+          title="Alternar entre tema claro y oscuro">
+          <svg id="theme-svg-icon" class="theme-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span id="theme-btn-text" class="theme-text">Oscuro</span>
+        </button>
+
+        <button 
+          id="mobile-menu-btn" 
+          class="mobile-menu-btn" 
+          type="button" 
+          aria-label="Abrir menú de navegación" 
+          aria-expanded="false" 
+          aria-controls="primary-menu"
+          aria-haspopup="true">
+          <span class="hamburger-bar" aria-hidden="true"></span>
+          <span class="hamburger-bar" aria-hidden="true"></span>
+          <span class="hamburger-bar" aria-hidden="true"></span>
+        </button>
+      </section>
+    </nav>
+  </header>
+
+  <!-- Seccion hero de presentacion con marcado semantico y atributos de accesibilidad -->
+  <header id="hero" class="hero-banner" role="region" aria-label="Presentación principal">
+    <section class="hero-content">
+      <header class="hero-intro">
+        <span class="hero-status-pill" role="status">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span id="hero-status-text">Disponible para Pasantías y Proyectos Profesionales</span>
+        </span>
+        <h1 class="hero-title">
+          Hola, soy <span class="gradient-text">Kael Alessandro López Castillo</span>
+        </h1>
+        <p class="hero-subtitle">
+          Estudiante de <strong>Ingeniería de Sistemas</strong> en la <em>Universidad Católica Boliviana "San Pablo"</em> (Sede La Paz). Especializado en arquitectura backend, ingeniería de datos, servicios cloud en AWS, entornos con Docker y soluciones IoT.
+        </p>
+      </header>
+
+      <nav class="hero-actions" aria-label="Acciones de inicio">
+        <a href="#projects" class="btn btn--primary">
+          <span>Explorar Proyectos</span>
+        </a>
+        <a href="#contact" class="btn btn--secondary">
+          <span>Contactar</span>
+        </a>
+        <a href="https://github.com/Kael-py" target="_blank" rel="noopener noreferrer" class="btn btn--ghost" aria-label="Visitar perfil de GitHub de Kael López (se abre en nueva pestaña)">
+          <span>Perfil GitHub (Kael-py)</span>
+        </a>
+      </nav>
+
+      <section class="hero-metrics" aria-label="Métricas destacadas del perfil">
+        <article class="metric-card">
+          <strong class="metric-value">1er Lugar</strong>
+          <span class="metric-label">WORKSHOP 1 2025</span>
+          <small class="metric-desc">UCB San Pablo La Paz</small>
+        </article>
+        <article class="metric-card">
+          <strong class="metric-value">UCB</strong>
+          <span class="metric-label">Ingeniería en Sistemas</span>
+          <small class="metric-desc">Sede La Paz, Bolivia</small>
+        </article>
+        <article class="metric-card">
+          <strong class="metric-value">SIS-214</strong>
+          <span class="metric-label">Tecnologías Web I</span>
+          <small class="metric-desc">Examen Práctico 100%</small>
+        </article>
+        <article class="metric-card">
+          <strong class="metric-value">Técnico Medio</strong>
+          <span class="metric-label">Idioma Inglés</span>
+          <small class="metric-desc">CBA La Paz</small>
+        </article>
+      </section>
+    </section>
+
+    <figure class="hero-figure">
+      <img 
+        src="img/kael-lopez.jpg" 
+        alt="Fotografía profesional de Kael Alessandro López Castillo, estudiante de Ingeniería de Sistemas en la Universidad Católica Boliviana" 
+        class="hero-avatar"
+        width="380"
+        height="380"
+        loading="eager">
+      <figcaption class="hero-caption">
+        <strong>Kael Alessandro López Castillo</strong> &mdash; Ingeniería de Sistemas (UCB)
+      </figcaption>
+    </figure>
+  </header>
+
+  <div class="main-layout-wrapper">
+    <main id="main-content" class="main-content" role="main">
+      
+      <!-- Seccion de trayectoria profesional y pilares de especializacion tecnica -->
+      <section id="about" class="section-container" aria-labelledby="heading-about">
+        <header class="section-header">
+          <span class="section-tag" aria-hidden="true">01 / TRAYECTORIA</span>
+          <h2 id="heading-about" class="section-title">Sobre Mí &amp; Perfil Profesional</h2>
+          <p class="section-subtitle">
+            Formación analítica, visión de ingeniería y compromiso con la calidad en el desarrollo de software.
+          </p>
+        </header>
+
+        <section class="about-grid">
+          <article class="about-text-card">
+            <h3 class="about-card-title">Perfil de Ingeniería</h3>
+            <p>
+              Estudiante de <strong>Ingeniería de Sistemas</strong> en la <em>Universidad Católica Boliviana "San Pablo" (Sede La Paz)</em> con sólida formación en el desarrollo de software y una marcada inclinación hacia la <strong>arquitectura backend</strong> y la <strong>ingeniería de datos</strong>.
+            </p>
+            <p>
+              Cuento con experiencia práctica en el diseño e implementación de <strong>APIs REST</strong>, servicios del lado del servidor utilizando <strong>Python y Node.js</strong>, y en la orquestación de entornos contenedorizados mediante <strong>Docker</strong>.
+            </p>
+            <p>
+              Mi experiencia abarca proyectos galardonados como el <strong>Primer Lugar en el WORKSHOP 1 2025</strong> de la UCB (visión artificial con TensorFlow para control de gasolineras) y la destacada participación en el <strong>WORKSHOP 1 2026</strong> (desarrollo de guante inteligente IoT con ESP32 y MicroPython).
+            </p>
+          </article>
+
+          <section class="about-pillars" aria-label="Pilares de especialización">
+            <article class="pillar-card">
+              <span class="pillar-bullet" aria-hidden="true">01</span>
+              <h4 class="pillar-title">Backend &amp; APIs REST</h4>
+              <p class="pillar-desc">Servicios del servidor eficientes con Python y Node.js, diseño de endpoints y bases de datos SQL relacionales.</p>
+            </article>
+
+            <article class="pillar-card">
+              <span class="pillar-bullet" aria-hidden="true">02</span>
+              <h4 class="pillar-title">Ingeniería de Datos &amp; IA</h4>
+              <p class="pillar-desc">Modelos predictivos y visión artificial con TensorFlow, estructuración y procesamiento analítico de flujos de datos.</p>
+            </article>
+
+            <article class="pillar-card">
+              <span class="pillar-bullet" aria-hidden="true">03</span>
+              <h4 class="pillar-title">Cloud AWS &amp; Contenedores</h4>
+              <p class="pillar-desc">Arquitectura serverless en AWS (Lambda, S3, EC2, API Gateway) y despliegue contenedorizado con Docker.</p>
+            </article>
+
+            <article class="pillar-card">
+              <span class="pillar-bullet" aria-hidden="true">04</span>
+              <h4 class="pillar-title">IoT, Sensores &amp; Redes</h4>
+              <p class="pillar-desc">Programación de microcontroladores ESP32 con MicroPython, telemetría y configuración de redes (VLANs, OSPF, NAT).</p>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <!-- Seccion de proyectos reales con buscador reactivo y filtros dinamicos -->
+      <section id="projects" class="section-container" aria-labelledby="heading-projects">
+        <header class="section-header">
+          <span class="section-tag" aria-hidden="true">02 / PORTAFOLIO</span>
+          <h2 id="heading-projects" class="section-title">Proyectos Reales de Ingeniería</h2>
+          <p class="section-subtitle">
+            Proyectos destacados desarrollados en la Universidad Católica Boliviana "San Pablo" y entornos de producción cloud.
+          </p>
+        </header>
+
+        <section class="projects-controls" aria-label="Controles de búsqueda y filtros de proyectos">
+          <form class="search-form" role="search" aria-label="Buscar en proyectos de Kael López" onsubmit="event.preventDefault();">
+            <label for="project-search-input" class="sr-only">Buscar por palabra clave, tecnología o título</label>
+            <span class="search-input-wrapper">
+              <span class="search-label-indicator" aria-hidden="true">Buscar:</span>
+              <input 
+                type="search" 
+                id="project-search-input" 
+                class="search-input" 
+                placeholder="Buscar por tecnología (ej: TensorFlow, ESP32, AWS, Docker)..." 
+                autocomplete="off"
+                aria-controls="projects-grid"
+                aria-describedby="projects-live-count">
+              <button 
+                type="button" 
+                id="search-clear-btn" 
+                class="search-clear-btn" 
+                aria-label="Limpiar búsqueda" 
+                hidden>
+                Limpiar
+              </button>
+            </span>
+          </form>
+
+          <nav class="categories-nav" aria-label="Filtrar proyectos por categoría">
+            <ul id="category-filter-list" class="filter-pills" role="radiogroup" aria-label="Categorías de proyectos">
+              <li role="presentation">
+                <button type="button" class="filter-pill is-active" data-category="all" role="radio" aria-checked="true">
+                  Todos
+                </button>
+              </li>
+              <li role="presentation">
+                <button type="button" class="filter-pill" data-category="ia-datos" role="radio" aria-checked="false">
+                  IA y Datos
+                </button>
+              </li>
+              <li role="presentation">
+                <button type="button" class="filter-pill" data-category="iot" role="radio" aria-checked="false">
+                  IoT
+                </button>
+              </li>
+              <li role="presentation">
+                <button type="button" class="filter-pill" data-category="cloud-web" role="radio" aria-checked="false">
+                  Cloud e Infraestructura
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <output 
+          id="projects-live-count" 
+          class="live-status-bar" 
+          aria-live="polite" 
+          aria-atomic="true">
+          Mostrando proyectos registrados...
+        </output>
+
+        <section 
+          id="projects-grid" 
+          class="projects-grid" 
+          aria-label="Listado de proyectos de ingeniería">
+        </section>
+
+        <article id="no-projects-found" class="empty-state-card" hidden aria-live="polite">
+          <span class="empty-indicator" aria-hidden="true">Sin resultados encontrados</span>
+          <h3 class="empty-title">No se encontraron proyectos</h3>
+          <p class="empty-desc">
+            No hay proyectos que coincidan con los criterios de búsqueda aplicados. Intenta con términos como <em>TensorFlow</em>, <em>ESP32</em>, <em>AWS</em>, <em>Docker</em> o restablece los filtros.
+          </p>
+          <button type="button" id="reset-filters-btn" class="btn btn--secondary">
+            Restablecer Filtros y Búsqueda
+          </button>
+        </article>
+      </section>
+
+      <!-- Matriz categorizada de habilidades tecnicas estructurada en tarjetas semanticas -->
+      <section id="skills" class="section-container" aria-labelledby="heading-skills">
+        <header class="section-header">
+          <span class="section-tag" aria-hidden="true">03 / COMPETENCIAS</span>
+          <h2 id="heading-skills" class="section-title">Habilidades Técnicas</h2>
+          <p class="section-subtitle">
+            Competencias de ingeniería clasificadas por áreas de especialización y herramientas de desarrollo.
+          </p>
+        </header>
+
+        <section class="skills-matrix-grid" aria-label="Matriz de habilidades técnicas">
+          <article class="skill-category-card">
+            <h3 class="skill-cat-title">Desarrollo Web</h3>
+            <ul class="skill-tags-list">
+              <li class="skill-tag">Angular</li>
+              <li class="skill-tag">Node.js</li>
+              <li class="skill-tag">HTML5</li>
+              <li class="skill-tag">CSS3</li>
+              <li class="skill-tag">JavaScript (ES6+)</li>
+              <li class="skill-tag">TypeScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-category-card">
+            <h3 class="skill-cat-title">Lenguajes de Programación</h3>
+            <ul class="skill-tags-list">
+              <li class="skill-tag">Python</li>
+              <li class="skill-tag">JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-category-card">
+            <h3 class="skill-cat-title">Bases de Datos</h3>
+            <ul class="skill-tags-list">
+              <li class="skill-tag">SQL</li>
+              <li class="skill-tag">Modelado Relacional</li>
+            </ul>
+          </article>
+
+          <article class="skill-category-card">
+            <h3 class="skill-cat-title">Infraestructura y Despliegue</h3>
+            <ul class="skill-tags-list">
+              <li class="skill-tag">Docker</li>
+              <li class="skill-tag">AWS Lambda</li>
+              <li class="skill-tag">Amazon S3</li>
+              <li class="skill-tag">Amazon EC2</li>
+              <li class="skill-tag">API Gateway</li>
+            </ul>
+          </article>
+
+          <article class="skill-category-card">
+            <h3 class="skill-cat-title">Redes de Computadoras</h3>
+            <ul class="skill-tags-list">
+              <li class="skill-tag">Configuración de VLANs</li>
+              <li class="skill-tag">Protocolo OSPF</li>
+              <li class="skill-tag">NAT</li>
+              <li class="skill-tag">EtherChannel</li>
+            </ul>
+          </article>
+
+          <article class="skill-category-card">
+            <h3 class="skill-cat-title">Internet de las Cosas (IoT)</h3>
+            <ul class="skill-tags-list">
+              <li class="skill-tag">Microcontroladores ESP32</li>
+              <li class="skill-tag">MicroPython</li>
+              <li class="skill-tag">Sensores Electrónicos</li>
+              <li class="skill-tag">Telemetría en Tiempo Real</li>
+            </ul>
+          </article>
+        </section>
+      </section>
+
+      <!-- Consumo REST con Fetch API, async/await, try/catch, response.ok y estados UI -->
+      <section id="github" class="section-container" aria-labelledby="heading-github">
+        <header class="section-header">
+          <span class="section-tag" aria-hidden="true">04 / CÓDIGO ABIERTO</span>
+          <h2 id="heading-github" class="section-title">Repositorios en Vivo de GitHub</h2>
+          <p class="section-subtitle">
+            Integración directa en tiempo real con la API REST pública de GitHub (<a href="https://github.com/Kael-py" target="_blank" rel="noopener noreferrer" class="inline-link">@Kael-py</a>).
+          </p>
+        </header>
+
+        <section class="github-controls">
+          <output 
+            id="github-status-message" 
+            class="github-status-output" 
+            aria-live="polite" 
+            aria-atomic="true">
+            Consultando repositorios en la API de GitHub...
+          </output>
+          <button 
+            type="button" 
+            id="github-refresh-btn" 
+            class="btn btn--sm btn--ghost" 
+            aria-label="Actualizar repositorios de GitHub">
+            <span>Actualizar</span>
+          </button>
+        </section>
+
+        <section 
+          id="github-repos-grid" 
+          class="github-repos-grid" 
+          aria-label="Lista de repositorios públicos de GitHub" 
+          aria-busy="true">
+          <article class="repo-card repo-card--skeleton" aria-hidden="true">
+            <header class="skeleton-line skeleton-title"></header>
+            <p class="skeleton-line skeleton-desc"></p>
+            <footer class="skeleton-line skeleton-meta"></footer>
+          </article>
+          <article class="repo-card repo-card--skeleton" aria-hidden="true">
+            <header class="skeleton-line skeleton-title"></header>
+            <p class="skeleton-line skeleton-desc"></p>
+            <footer class="skeleton-line skeleton-meta"></footer>
+          </article>
+          <article class="repo-card repo-card--skeleton" aria-hidden="true">
+            <header class="skeleton-line skeleton-title"></header>
+            <p class="skeleton-line skeleton-desc"></p>
+            <footer class="skeleton-line skeleton-meta"></footer>
+          </article>
+        </section>
+      </section>
+
+      <!-- Formulario de contacto con preventDefault(), validacion regex y persistencia en localStorage -->
+      <section id="contact" class="section-container" aria-labelledby="heading-contact">
+        <header class="section-header">
+          <span class="section-tag" aria-hidden="true">05 / COMUNICACIÓN</span>
+          <h2 id="heading-contact" class="section-title">Contacto Profesional</h2>
+          <p class="section-subtitle">
+            ¿Interesado en coordinar una pasantía, propuesta laboral o consulta técnica? Envíame un mensaje y responderé a la brevedad.
+          </p>
+        </header>
+
+        <section class="contact-layout">
+          <aside class="contact-info-card" aria-label="Información de contacto directo">
+            <h3 class="contact-info-title">Canales Directos</h3>
+            <p class="contact-info-intro">
+              Disponible para oportunidades en La Paz y proyectos remotos de ingeniería.
+            </p>
+
+            <address class="contact-address">
+              <article class="contact-item">
+                <span class="contact-item-tag" aria-hidden="true">Ubicación</span>
+                <section class="contact-item-body">
+                  <strong>Ciudad / País</strong>
+                  <span>La Paz, Bolivia</span>
+                </section>
+              </article>
+
+              <article class="contact-item">
+                <span class="contact-item-tag" aria-hidden="true">Teléfono</span>
+                <section class="contact-item-body">
+                  <strong>Teléfono / WhatsApp</strong>
+                  <a href="tel:+59173004364" class="contact-link">(+591) 73004364</a>
+                </section>
+              </article>
+
+              <article class="contact-item">
+                <span class="contact-item-tag" aria-hidden="true">Correo</span>
+                <section class="contact-item-body">
+                  <strong>Correo Electrónico</strong>
+                  <a href="mailto:kaellopez1@gmail.com" class="contact-link">kaellopez1@gmail.com</a>
+                </section>
+              </article>
+
+              <article class="contact-item">
+                <span class="contact-item-tag" aria-hidden="true">GitHub</span>
+                <section class="contact-item-body">
+                  <strong>Repositorio GitHub</strong>
+                  <a href="https://github.com/Kael-py" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/Kael-py</a>
+                </section>
+              </article>
+            </address>
+
+            <section class="local-storage-summary" aria-label="Bandeja local de mensajes">
+              <header class="storage-summary-header">
+                <h4 class="storage-title">Persistencia LocalStorage</h4>
+              </header>
+              <p class="storage-text">
+                Los mensajes que envíes se serializan mediante JSON y se almacenan de forma local en tu navegador garantizando trazabilidad y validación estricta de datos.
+              </p>
+              <footer class="storage-footer">
+                <span id="saved-messages-count" class="storage-count">0 mensajes registrados</span>
+                <button type="button" id="clear-local-messages-btn" class="btn-text-link" aria-label="Limpiar historial de mensajes de LocalStorage">
+                  Vaciar
+                </button>
+              </footer>
+            </section>
+          </aside>
+
+          <form id="contact-form" class="contact-form" novalidate aria-label="Formulario de contacto profesional de Kael Alessandro López Castillo">
+            <output 
+              id="form-feedback-alert" 
+              class="form-alert" 
+              role="status" 
+              aria-live="polite" 
+              hidden>
+            </output>
+
+            <fieldset class="form-fieldset">
+              <legend class="sr-only">Información de Contacto</legend>
+
+              <article class="form-group">
+                <label for="contact-name" class="form-label">
+                  Nombre Completo <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="fullName" 
+                  class="form-input" 
+                  placeholder="Ej. Ing. Carlos Mendoza" 
+                  required 
+                  minlength="3" 
+                  maxlength="60"
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="name-error-msg name-hint">
+                <small id="name-hint" class="form-hint">Mínimo 3 letras, solo caracteres alfabéticos.</small>
+                <span id="name-error-msg" class="form-error-msg" role="alert" aria-live="polite"></span>
+              </article>
+
+              <article class="form-group">
+                <label for="contact-email" class="form-label">
+                  Correo Electrónico <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="nombre@organizacion.com" 
+                  required 
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="email-error-msg email-hint">
+                <small id="email-hint" class="form-hint">Dirección de correo electrónico válida (formato RFC).</small>
+                <span id="email-error-msg" class="form-error-msg" role="alert" aria-live="polite"></span>
+              </article>
+
+              <article class="form-group">
+                <label for="contact-subject" class="form-label">
+                  Asunto de la Consulta <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="subject" 
+                  class="form-input" 
+                  placeholder="Ej. Propuesta de Pasantía / Proyecto Backend" 
+                  required 
+                  minlength="4" 
+                  maxlength="100"
+                  aria-required="true"
+                  aria-describedby="subject-error-msg">
+                <span id="subject-error-msg" class="form-error-msg" role="alert" aria-live="polite"></span>
+              </article>
+
+              <article class="form-group">
+                <header class="textarea-header">
+                  <label for="contact-message" class="form-label">
+                    Mensaje Detallado <span class="required-indicator" aria-hidden="true">*</span>
+                  </label>
+                  <span id="char-counter" class="char-counter" aria-live="polite">0 / 1000</span>
+                </header>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="5" 
+                  placeholder="Describe la propuesta, requerimientos técnicos o consulta académica..." 
+                  required 
+                  minlength="10" 
+                  maxlength="1000"
+                  aria-required="true"
+                  aria-describedby="message-error-msg message-hint"></textarea>
+                <small id="message-hint" class="form-hint">Entre 10 y 1000 caracteres.</small>
+                <span id="message-error-msg" class="form-error-msg" role="alert" aria-live="polite"></span>
+              </article>
+
+              <footer class="form-actions">
+                <button 
+                  type="submit" 
+                  id="submit-form-btn" 
+                  class="btn btn--primary btn--block">
+                  <span id="submit-btn-text">Enviar Mensaje Profesional</span>
+                </button>
+              </footer>
+            </fieldset>
+          </form>
+        </section>
+      </section>
+
+    </main>
+
+    <!-- Panel lateral aside semantico complementario para educacion, reconocimientos e idiomas -->
+    <aside id="profile-aside" class="profile-aside" role="complementary" aria-label="Información complementaria del CV de Kael Alessandro López Castillo">
+      <section class="aside-widget">
+        <header class="widget-header">
+          <h3 class="widget-title">Educación</h3>
+        </header>
+        <article class="widget-body">
+          <strong class="academic-degree">Ingeniería en Sistemas</strong>
+          <span class="academic-institution">Universidad Católica Boliviana "San Pablo"</span>
+          <span class="academic-location">Sede La Paz &bull; En curso</span>
+          <span class="academic-badge">SIS-214 Tecnologías Web I</span>
+        </article>
+        <article class="widget-body widget-body--secondary">
+          <strong class="academic-degree">Diploma de Bachiller en Humanidades</strong>
+          <span class="academic-institution">FEPPA San Calixto</span>
+          <span class="academic-location">La Paz &bull; Bachillerato Concluido</span>
+        </article>
+        <article class="widget-body widget-body--secondary">
+          <strong class="academic-degree">Técnico Medio de Lengua Extranjera: Inglés</strong>
+          <span class="academic-institution">Centro Boliviano Americano (Fundación Cultural y Educativa La Paz)</span>
+          <span class="academic-location">Graduado</span>
+        </article>
+      </section>
+
+      <section class="aside-widget aside-widget--award">
+        <header class="widget-header">
+          <h3 class="widget-title">Reconocimientos</h3>
+        </header>
+        <ul class="cert-list">
+          <li class="cert-item cert-item--gold">
+            <strong>Primer Lugar en el WORKSHOP 1 2025</strong>
+            <small>Universidad Católica Boliviana "San Pablo" Sede La Paz</small>
+            <span class="cert-subtext">Proyecto: Control de colas de gasolineras</span>
+          </li>
+          <li class="cert-item">
+            <strong>Destacada participación en el WORKSHOP 1 2026</strong>
+            <small>Universidad Católica Boliviana "San Pablo" Sede La Paz</small>
+            <span class="cert-subtext">Proyecto: Guante Inteligente - Gantia</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="aside-widget">
+        <header class="widget-header">
+          <h3 class="widget-title">Formación Complementaria</h3>
+        </header>
+        <ul class="cert-list">
+          <li class="cert-item">
+            <strong>Redes de computadoras</strong>
+            <small>Centro de Capacitación Técnica Privado EGEI S.R.L.</small>
+          </li>
+          <li class="cert-item">
+            <strong>Instalación de software</strong>
+            <small>Centro de Capacitación Técnica Privado EGEI S.R.L.</small>
+          </li>
+          <li class="cert-item">
+            <strong>Ensamblaje y Mantenimiento de Computadoras</strong>
+            <small>Centro de Capacitación Técnica Privado EGEI S.R.L.</small>
+          </li>
+          <li class="cert-item">
+            <strong>Antivirus y utilitarios</strong>
+            <small>Centro de Capacitación Técnica Privado EGEI S.R.L.</small>
+          </li>
+          <li class="cert-item">
+            <strong>Hardware y software</strong>
+            <small>Centro de Capacitación Técnica Privado EGEI S.R.L.</small>
+          </li>
+          <li class="cert-item">
+            <strong>Ensamblaje, instalación y mantenimiento</strong>
+            <small>Universidad Pública de El Alto (UPEA)</small>
+          </li>
+        </ul>
+      </section>
+
+      <section class="aside-widget">
+        <header class="widget-header">
+          <h3 class="widget-title">Idiomas</h3>
+        </header>
+        <dl class="language-dl">
+          <dt>Español</dt>
+          <dd>Nativo</dd>
+          <dt>Inglés</dt>
+          <dd>Técnico Medio (Centro Boliviano Americano)</dd>
+        </dl>
+      </section>
+
+      <section class="aside-widget">
+        <header class="widget-header">
+          <h3 class="widget-title">Habilidades Blandas</h3>
+        </header>
+        <ul class="soft-skills-list">
+          <li>Resolución de problemas</li>
+          <li>Trabajo en equipo</li>
+          <li>Aprendizaje continuo</li>
+          <li>Pensamiento analítico</li>
+          <li>Comunicación asertiva</li>
+          <li>Gestión de proyectos</li>
+          <li>Adaptabilidad y rápido aprendizaje</li>
+        </ul>
+      </section>
+
+      <section class="aside-widget aside-widget--highlight">
+        <header class="widget-header">
+          <h3 class="widget-title">Disponibilidad Profesional</h3>
+        </header>
+        <p class="widget-text">
+          Abierto a pasantías universitarias, proyectos de ingeniería backend y roles en modalidad híbrida o remota en La Paz.
+        </p>
+        <a href="#contact" class="btn btn--sm btn--primary btn--block">
+          Contactar Ahora
+        </a>
+      </section>
+
+    </aside>
+  </div>
+
+  <!-- Pie de pagina semantico footer con rol contentinfo y metadatos accesibles -->
+  <footer class="site-footer" role="contentinfo">
+    <section class="footer-inner">
+      <header class="footer-branding">
+        <a href="#hero" class="brand-link" aria-label="Ir al inicio de la página">
+          <span class="brand-badge" aria-hidden="true">&lt;KL /&gt;</span>
+          <span class="brand-text">Kael Alessandro López Castillo</span>
+        </a>
+        <p class="footer-bio">
+          Estudiante de Ingeniería de Sistemas en la Universidad Católica Boliviana "San Pablo" (Sede La Paz, Bolivia). Especializado en arquitectura backend, ingeniería de datos, cloud AWS e IoT.
+        </p>
+      </header>
+
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <h4 class="footer-nav-title">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Sobre Mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#github">GitHub en Vivo</a></li>
+          <li><a href="#profile-aside">Perfil y CV</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section class="footer-academic">
+        <h4 class="footer-nav-title">Datos Académicos</h4>
+        <address class="footer-address">
+          <span>Universidad Católica Boliviana "San Pablo"</span>
+          <span>Carrera de Ingeniería en Sistemas</span>
+          <span>Tecnologías Web I (SIS-214)</span>
+          <span>Sede La Paz, Bolivia</span>
+        </address>
+      </section>
+
+      <section class="footer-social">
+        <h4 class="footer-nav-title">Contacto &amp; Redes</h4>
+        <ul class="social-links" aria-label="Enlaces a redes profesionales">
+          <li>
+            <a href="https://github.com/Kael-py" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub de Kael López (se abre en pestaña nueva)">
+              GitHub (@Kael-py)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:kaellopez1@gmail.com" class="social-link" aria-label="Enviar correo a kaellopez1@gmail.com">
+              kaellopez1@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+59173004364" class="social-link" aria-label="Llamar al teléfono (+591) 73004364">
+              (+591) 73004364
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="footer-bottom">
+      <small class="copyright-text">
+        &copy; <time datetime="2026">2026</time> <strong>Kael Alessandro López Castillo</strong>. Examen Práctico Tecnologías Web I (SIS-214) &bull; UCB "San Pablo" La Paz. Todos los derechos reservados.
+      </small>
+      <small class="wcag-badge">
+        Accesibilidad Web WAI-ARIA &bull; Semántica HTML5 Estricta &bull; Cero Divitis
+      </small>
+    </section>
+  </footer>
+
+  <!-- Notificacion toast dinamica con rol status y region aria-live polite -->
+  <aside 
+    id="toast-notification" 
+    class="toast-notification" 
+    role="status" 
+    aria-live="polite" 
+    aria-atomic="true" 
+    hidden>
+    <span class="toast-marker" id="toast-icon" aria-hidden="true">OK</span>
+    <span class="toast-message" id="toast-message">Notificación del sistema</span>
+  </aside>
+
+  <!-- Inclusion de scripts modulares para estructuras de datos inmutables y controladores DOM -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
